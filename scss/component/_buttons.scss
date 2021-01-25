@@ -11,23 +11,43 @@
     text-transform: uppercase;
     border-radius: 5px;
   }
-  
+
   .default {
-    background-color: #51ddfc;
+    background-color: $color-default;
+      
+    &:hover{
+      background-color: lighten($color-default, 20%);
+    }
   }
   
   .error {
-    background-color: #e4757a;
+    background-color: $color-error;
+      
+    &:hover{
+      background-color: lighten($color-error, 20%);
+    }
   }
   
   .info {
-    background-color: #927bc1;
+    background-color: $color-info;
+
+    &:hover{
+      background-color: lighten($color-info, 20%);
+    }
   }
   
   .success {
-    background-color: #63cc82;
+    background-color: $color-success;
+
+    &:hover{
+      background-color: lighten($color-success, 20%);
+    }
   }
   
   .warning {
-    background-color: #fd7856;
+    background-color: $color-warning;
+
+    &:hover{
+      background-color: lighten($color-warning, 20%);
+    }
   }
